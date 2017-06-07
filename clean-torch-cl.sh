@@ -10,14 +10,14 @@ echo
 if [[ `uname` == 'Darwin' ]]; then
     echo 'Removing old Torch files from your Mac...'
     # Removing folders
-    rm -rf ~/torch-cl/lib/{luarocks/,lua/,torch/,torchrocks/}
-    rm -rf ~/torch-cl/share/{torch,cmake/torch/,lua}
-    rm -rf ~/torch-cl/etc/{luarocks/,torchrocks/}
-    rm -rf ~/torch-cl/include/{torch,TH,THC,lauxlib.h,lua.h,lua.hpp,luaT.h,luaconf.h,luajit.h,lualib.h,qtlua}
+    rm -rf ~/torch-cl/install/lib/{luarocks/,lua/,torch/,torchrocks/}
+    rm -rf ~/torch-cl/install/share/{torch,cmake/torch/,lua}
+    rm -rf ~/torch-cl/install/etc/{luarocks/,torchrocks/}
+    rm -rf ~/torch-cl/install/include/{torch,TH,THC,lauxlib.h,lua.h,lua.hpp,luaT.h,luaconf.h,luajit.h,lualib.h,qtlua}
     rm -rf ~/.luarocks
     # Removing files
-    rm -f  ~/torch-cl/bin/{torch,th,qlua,json2lua,lua2json,torch-lua,torch-qlua,torch-rocks,torch-rocks-admin,luajit,luarocks,macqlua,mdcat,qlua}
-    rm -f  ~/torch-cl/lib/{*lua*,*TH*}
+    rm -f  ~/torch-cl/install/bin/{torch,th,qlua,json2lua,lua2json,torch-lua,torch-qlua,torch-rocks,torch-rocks-admin,luajit,luarocks,macqlua,mdcat,qlua}
+    rm -f  ~/torch-cl/install/lib/{*lua*,*TH*}
 fi
 
 # Check if we are on Linux (Ubuntu)
